@@ -1,11 +1,11 @@
 # Hello World Server
 
-This example illustrates a hello world node.js server
+这个例子介绍了一个： hello world node.js server
 
-Start the server with
+用下面的命令启动：
 
     node server.js
 
-Then open your browser at [http://127.0.0.1:3000][1]
+然后再浏览器输入后面的地址： [http://127.0.0.1:3000][1]
 
 [1]: http://127.0.0.1:3000
