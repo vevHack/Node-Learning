@@ -1,6 +1,7 @@
-# µÚÒ»ÕÂ
+# ç¬¬ä¸€ç« 
 
-µÚÒ»ÕÂ£º ½éÉÜ Node.js ²¢ÇÒÕ¹Ê¾´´½¨ÁËÒ»¸öÊä³öhello worldµÄserver
+åˆ›å»ºä¸€ä¸ª Node.js çš„hello nodeçš„ http server
 
 1. Hello World Server
+2. åˆ›å»ºä¸€ä¸ªè·¯ç”±
 
