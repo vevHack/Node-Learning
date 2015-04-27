@@ -1,4 +1,4 @@
-# Code Examples 根据二十四小时自学node和一些拓展
+# Code Examples 根据二十四小时自学node并加入了一些拓展
 
 含有大量的小程序来自学node. 
 
