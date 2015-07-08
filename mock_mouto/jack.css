@@ -1,0 +1,97 @@
+body, h1, h2, h3, h4, h5, p, form, ol, ul {
+    margin: 0;
+}
+
+/*ol ul{*/
+/*padding: 0;*/
+/*}*/
+
+html {
+    font: 1em "Avenir Next", Avenir, "Helvetica Neue", Helvetica, "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    color: #222;
+}
+
+textarea, input, option, select, button {
+    font: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, input, button {
+    transition: .3s ease;
+}
+
+h1, h2, h3, h4, p:hover {
+    cursor: crosshair;
+}
+
+::selection {
+    background: rgba(0, 149, 255, 0.1);
+    color: mediumseagreen;
+    cursor: default;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0;
+    height: 125px;
+}
+
+nav a {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 24px;
+    text-align: center;
+    padding: 90px 0 10px;
+    line-height: 24px;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+nav img {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 70px;
+}
+
+nav .active {
+    background-color: rgba(230, 244, 250, .5);
+    color: mediumseagreen;
+    border-radius: .5em;
+    font-size: 21px;
+}
+
+nav .active img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+nav a[href="#Jack"] img {
+    border-radius: 9em;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 20px;
+}
+
+a, input,
+duration a,
+nav img,
+#Sl, #S input {
+    transition: .3s ease;
+}
+
+
