@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 440px;
+    width: 660px;
+}
+
+.flex-container section {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.flex-container section:first-child {
+    height: 420px;
+}

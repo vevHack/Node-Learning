@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="note1.css"/>
+    <script src="note1.js"></script>
+    <title>CSS栅栏格布局</title>
+</head>
+<body>
+<section class="flex-container">
+    <section>A</section>
+    <section>B</section>
+    <section>C</section>
+    <section>D</section>
+    <section>E</section>
+</section>
+<!--兼容方案：float -->
+<!--最容易想到的就是运用 float 的浮动特性，为了更好的处理间距，我们需要三层结构，利用 margin 负值来抵消间距，形成视觉上的两段对齐效果。-->
+
+<!--渐进增强flex-->
+<!--优点：
+flex 可以较好的处理两端对齐布局，中间的空隙可以通过 align-content: space-between,justify-content: space-between 来实现自适应（但超过两行或两列时会有问题）。
+
+缺点：
+需要通过 order 属性手动调节为正确的元素顺序。-->
+
+
+<!--3. 面向未来 grid
+
+如果说从 Flex 开始 CSS有了真正的二维布局特性，那么 CSS Grid 将是二维布局的未来。
+
+优点：
+1）可以把传统的网页栅格体系直接对应到 CSS 声明，例如：
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+这样三句代码就表明我定义了一个两行三列的栅格，也就是题中的布局。
+
+2）通过 grid-column/row 属性里的 span 值可以方便的实现跨行或夸列，无需显性指定宽高的改变，非常方便的实现了跨行或夸列。
+
+.grid .a {
+    grid-row: span 2;
+}
+
+.grid .a:hover {
+    grid-row: auto;
+    grid-column: span 2;
+
+    from 一丝
+}-->
+</body>
+</html>
