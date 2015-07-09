@@ -2,9 +2,9 @@ body, h1, h2, h3, h4, h5, p, form, ol, ul {
     margin: 0;
 }
 
-/*ol ul{*/
-/*padding: 0;*/
-/*}*/
+ol ul {
+    padding: 0;
+}
 
 html {
     font: 1em "Avenir Next", Avenir, "Helvetica Neue", Helvetica, "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
@@ -27,7 +27,7 @@ a, input, button {
     transition: .3s ease;
 }
 
-h1, h2, h3, h4, p:hover {
+*:hover {
     cursor: crosshair;
 }
 
@@ -39,6 +39,79 @@ h1, h2, h3, h4, p:hover {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+img {
+    border: 0 none;
+}
+
+.o {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.c:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+* html .c {
+    height: 1%;
+}
+
+.h {
+    opacity: 0;
+    pointer-events: none;
+}
+
+xmp {
+    display: none;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import "animation.css";
+
+html {
+    font-family: 'PT serif', \5FAE\8EDF\6B63\9ED1\9AD4, \5FAE\8F6F\96C5\9ED1, \534E\6587\7EC6\9ED1, Microsoft Yahei, Hiragino Sans GB, sans-serif;
+}
+
+/*字体设定参考了 Ylune 的 blog！<http://www.ylune.in/#!home> */
+
+#m {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 9em;
+}
+
+header {
+    display: none;
+}
+
+a, input, button {
+    transition: .3s ease;
 }
 
 nav {
@@ -87,11 +160,156 @@ nav a[href="#Jack"] img {
     left: 20px;
 }
 
+article {
+    padding: 2em 0;
+}
+
+.p-title {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    padding: .2em .2em 0;
+    text-align: center;
+}
+
+.p-title.many {
+    font-size: 2em;
+}
+
+.p a:visited {
+    color: #899;
+}
+
+.cover {
+    background: url(loading.gif) 50% 50% no-repeat;
+    text-align: center;
+}
+
+.cover img {
+    max-width: 100%;
+    display: inline-block;
+    border-radius: .5em;
+}
+
+.cover img.h {
+    min-height: 300px;
+}
+
+.p-text {
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+.p-text h3 {
+    padding: 2em 10px 1em;
+    font-size: 1.5em;
+}
+
+.p-text h4 {
+    padding: 1em 10px 0;
+    font-size: 1.3em;
+}
+
+.p-text h5 {
+    font-size: 1.5em;
+}
+
+.p-text p {
+    line-height: 2em;
+    padding: 1em 0;
+}
+
+/*text-indent:2em;*/
+.p-text img {
+    max-width: 100%;
+}
+
+.p-text p img {
+    max-width: 100%;
+    display: block;
+    margin: 0em auto;
+    border-radius: .5em;
+}
+
+.p-text del {
+    color: #999;
+    font-size: .8em;
+}
+
+.p-text blockquote {
+    background: #EEE;
+    padding: 0 2em;
+    color: #333;
+}
+
+.p-text ul {
+    list-style-type: disc;
+    padding: 1em 1em 1em 4em;
+}
+
+.p-text .more {
+    padding: 0 0 2em;
+    text-align: center;
+    text-indent: 0;
+}
+
+.p-text .more a {
+    color: #666;
+}
+
+.p-meta {
+    line-height: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.p-meta li {
+    padding: 0 .2em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.p time {
+    display: block;
+    color: #999;
+}
+
+.at {
+    color: #05A;
+}
+
+.loading {
+    height: 300px;
+    background: url(loading.gif) 50% 50% no-repeat;
+}
+
+.banner {
+    font-size: 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+#more {
+    font-size: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+#more a {
+    padding: 1em 0;
+    border-radius: 1em;
+    display: block;
+}
+
+#more a:hover {
+
+}
+
 a, input,
 duration a,
 nav img,
 #Sl, #S input {
     transition: .3s ease;
 }
+
 
 
