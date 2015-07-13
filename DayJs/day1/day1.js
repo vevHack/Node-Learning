@@ -13,6 +13,8 @@
             scrollBottom: scrollBottom
         }
     };
+    window.textArea = textArea();
 })();
+textArea.scrollBottom();
 
 
