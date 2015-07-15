@@ -1,20 +1,34 @@
 /**
- * Created by vevHack on 2015/7/13.
+ * Created by bin on 2015/7/13.
  */
 (function () {
     var textArea = function () {
-        var textArea = document.getElementById('textArea');
+        var textArea, ta = document.getElementById('ta');
         var scrollBottom = function () {
             if (textArea.selectionStart === textArea.selectionEnd) {
                 textArea.scrollTop = textArea.scrollHeight;
             }
         };
+        var fireBottomEvent = function () {
+            console.log('test');
+            console.log(ta.scrollTop);
+            console.log(ta.scrollHeight);
+            console.log(ta.clientHeight);
+            if (ta.scrollTop > ta.scrollHeight - ta.clientHeight) {
+                alert('bottom')
+            }
+        };
         return {
-            scrollBottom: scrollBottom
+            scrollBottom: scrollBottom,
+            fireBottomEvent: fireBottomEvent
         }
     };
     window.textArea = textArea();
 })();
-textArea.scrollBottom();
+//textArea.scrollBottom();
+$('#ta').on('scroll', function () {
+    textArea.fireBottomEvent();
+});
+
 
 
