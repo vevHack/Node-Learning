@@ -54,3 +54,16 @@ function runCalculation(formula, callback) {
         }, 0)
     }
 }
+
+var webSocketCache = {};
+function openWebSocket(serverAddress, callback) {
+    var socket;
+    if (serverAddress in webSocketCache) {
+        socket = webSocketCache[serverAddress];
+    }
+    if (socket.readyState === WebSocket.OPEN) {
+        callback();
+    } else {
+        socket.onopen = _.compose(callback, socket.onopen);
+    }
+}
