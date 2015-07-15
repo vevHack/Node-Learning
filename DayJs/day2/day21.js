@@ -31,5 +31,6 @@ var setCommand = function (button, command) {
         command.execute();
     }
 };
+
 var refreshMenuBarCommand = RefreshMenuBar(MenuBar);
 setCommand(button1, refreshMenuBarCommand);
