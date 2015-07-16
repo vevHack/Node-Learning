@@ -67,3 +67,17 @@ function openWebSocket(serverAddress, callback) {
         socket.onopen = _.compose(callback, socket.onopen);
     }
 }
+
+var fs = require('fs');
+fs.readFile('jacktest', function (err, data) {
+    if (err) {
+        return console.error(err);
+    }
+    console.log(data.toString('utf-8'))
+});
+
+$.get('/data', function () {
+    success:successHandler,
+        failure
+    failureHandler
+});
