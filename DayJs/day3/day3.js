@@ -30,11 +30,11 @@ var timer = setInterval(function () {
 }, 0);
 //requestAnimationFrame()
 //process.trick()
-var functionHasReturned = false;
-asyncFunction(function () {
-    console.assert(functionHasReturned)
-});
-functionHasReturned = true;
+//var functionHasReturned = false;
+//asyncFunction(function () {
+//    console.assert(functionHasReturned)
+//});
+//functionHasReturned = true;
 
 var calculationCache = {},
     calculationCallbacks = {},
