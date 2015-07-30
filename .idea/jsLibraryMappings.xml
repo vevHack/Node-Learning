@@ -3,5 +3,6 @@
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/Blog/app.js" libraries="{Node.js Globals, Node.js v0.12.2 Core Modules}" />
     <file url="file://$PROJECT_DIR$/DayJs/day3/day3.js" libraries="{Node.js Globals, Node.js v0.12.2 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/pdf/app.js" libraries="{Node.js Globals, Node.js v0.12.2 Core Modules}" />
   </component>
 </project>
