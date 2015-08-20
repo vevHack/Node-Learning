@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>JS test</title>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/underscore/underscore.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#testDiv").keydown(function (event) {
+                alert("Pressed " + event.which);
+            });
+            $("#testDiv2").keydown(function (event) {
+                alert("Pressed " + event.which);
+            });
+            var bin = {name: 'jack', age: 25};
+            var binArray = [{name: 'jack', age: 25}, {name: 'jack2', age: 21}];
+            var binKey = _.keys(bin);
+            var binValue = _.values(bin);
+            var binPluck = _.pluck(binArray,'name');
+            var binPairs = _.pairs(bin);
+            console.log(binKey);
+            console.log(binValue);
+            console.log(binPluck);
+            console.log(binPairs);
+        });
+    </script>
+    <style type="text/css">
+        #testDiv {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="testDiv2" tabindex="2">
+    <p id="p12"><span style="font-family: Courier New; ">ASDFASDFASDFASD</span></p>
+
+    <p id="p22"><span style="font-family: Farbod; ">ASDFASDFASDFASDFASDF</span></p>
+
+    <p id="p32"><span style="font-family: Farbod Titr; ">ASDFASDFASDFASDF</span></p>
+</div>
+<div id="testDiv" tabindex="2">
+    <p id="p1"><span style="font-family: Courier New; ">ASDFASDFASDFASD</span></p>
+
+    <p id="p2"><span style="font-family: Farbod; ">ASDFASDFASDFASDFASDF</span></p>
+
+    <p id="p3"><span style="font-family: Farbod Titr; ">ASDFASDFASDFASDF</span></p>
+</div>
+</body>
+</html>
